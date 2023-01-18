@@ -2,7 +2,7 @@
 
 # You need:
 Database (MongoDB)
-Google Console Account to create the API Auth Key's
+Google Console Account to create the API Auth Key's 
 
 # Create .env file
 Create a .env file to store your credentials. Example below:
