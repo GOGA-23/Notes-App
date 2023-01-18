@@ -1,0 +1,37 @@
+<div class="header container-fluid">
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 bg-dark"
+  >
+    <a
+      href="/dashboard"
+      class="d-flex align-items-center col-md-3 mb-2 mx-3 fs-5 fw-bolder mb-md-0 text-warning text-decoration-none"
+    >
+      <img class="note-icon" src="/img/notes-64.png" alt="Image" />
+      Notes
+    </a>
+
+    <form
+      class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0"
+      role="search"
+      action="/dashboard/search"
+    >
+      <input
+        type="search"
+        class="form-control border-warning w-75"
+        name="searchTerm"
+        placeholder="Search..."
+        aria-label="Search"
+      />
+    </form>
+
+    <div class="col-md-3 text-end mx-3">
+      <a
+        type="button"
+        href="/logout"
+        class="btn btn-outline-warning rounded-pill me-2"
+      >
+        Logout
+      </a>
+    </div>
+  </header>
+</div>

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+:root {
+  --background-color: #ffc701;
+  --bs-primary-rgb: #010e5a;
+}
+
+.header,
+.footer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  font-family: "Kalam", cursive !important ;
+  background-color: var(--background-color) !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+} */
+
+.note-icon {
+  height: 35px;
+  width: 35px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder !important;
+}
+
+.btn {
+  padding-left: 1.6rem !important;
+  padding-right: 1.6rem !important;
+}
+
+/* Home - Front-page */
+@media (min-width: 1100px) {
+  .home {
+    background: url("../img/human-1.svg") left bottom no-repeat,
+      url("../img/human-2.svg") right bottom no-repeat, var(--background-color);
+  }
+
+  .home-title::before {
+    content: url("../img/stars.svg");
+    position: absolute;
+    left: -35px;
+    top: -20px;
+  }
+
+  .home-title::after {
+    content: url("../img/stars.svg");
+    position: absolute;
+    right: -30px;
+    bottom: -15px;
+  }
+}
+
+/* .row {
+  flex-shrink: 0;
+} */
