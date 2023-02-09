@@ -22,13 +22,6 @@ body {
   padding: 0px !important;
 }
 
-/* .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-} */
-
 .note-icon {
   height: 35px;
   width: 35px;
@@ -69,7 +62,3 @@ h6 {
     bottom: -15px;
   }
 }
-
-/* .row {
-  flex-shrink: 0;
-} */
