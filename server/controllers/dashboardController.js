@@ -119,8 +119,8 @@ exports.dashboardSearchSubmit = async (req, res) => {
 
     const searchResults = await Note.find({
       $or: [
-        { title: { $regex: new RegExp(searchNoSpecialChars, "i") } },
-        { body: { $regex: new RegExp(searchNoSpecialChars, "i") } },
+        { title: { $regex: searchNoSpecialChars, $options: "i" } },
+        { body: { $regex: searchNoSpecialChars, $options: "i" } },
       ],
     }).where({ user: req.user.id });
 
