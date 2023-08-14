@@ -60,7 +60,7 @@ router.get('/logout', (req, res) => {
   req.session.destroy(error => {
     if(error) {
       console.log(error);
-      res.send('Error loggin out');
+      res.send('Error login out');
     } else {
       res.redirect('/')
     }
@@ -68,7 +68,7 @@ router.get('/logout', (req, res) => {
 });
 
 
-// Presist user data after successful authentication
+//Persist user data after successful authentication
 passport.serializeUser(function (user, done) {
   done(null, user.id);
 });
